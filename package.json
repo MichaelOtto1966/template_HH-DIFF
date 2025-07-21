@@ -9,7 +9,7 @@
   "main": "server.mjs",
   "scripts": {
     "start": "node server.mjs",
-    "dev": "nodemon server.MIT"
+    "dev": "nodemon server.mjs"
   },
   "dependencies": {
     "express": "^4.21.2",

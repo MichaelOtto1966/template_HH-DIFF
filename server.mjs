@@ -1,11 +1,16 @@
-// server.js
+// server.mjs
 // where your node app starts
 
 // init project
-const express = require("express");
-const bodyParser = require("body-parser");
-require("dotenv").config();
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import express from 'express';
+import bodyParser from 'body-parser';
+import { configDotenv } from "dotenv";
+configDotenv();
 const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

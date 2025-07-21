@@ -1,0 +1,32 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Start server.js App (Development)",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "dev" 
+            ],
+            "console": "integratedTerminal", // Zeigt die Ausgabe im VS Code Terminal an
+            "internalConsoleOptions": "neverOpen", // Verhindert, dass die Debug-Konsole zusätzlich aufgeht
+
+            // Optional: Browser automatisch öffnen
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "Your app is listening on port (\\d+)", // Passen Sie den Port Ihrer App an
+                "uriFormat": "http://localhost:%s"
+            },
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+           // "program": "${workspaceFolder}/server.js"
+        }
+    ]
+}

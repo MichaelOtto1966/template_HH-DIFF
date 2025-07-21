@@ -1,0 +1,35 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "bewerbungshomepage-node-js",
+  "version": "0.0.1",
+  "description": "Node app for a Application-Website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-device": "^0.4.2",
+    "dotenv": "^16.4.7",
+    "body-parser": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0" 
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "repository": {
+    "url": "https://github.com/bewerbungshomepage-with-blog"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "template",
+    "nodemailer",
+    "express"
+  ]
+}

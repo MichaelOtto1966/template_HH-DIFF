@@ -32,6 +32,7 @@ app.all("*", checkHttps);
 
 // Die statischen Seiten in public und content werden als "statisch" definiert. So können Sie direkt adressiert werden.
 app.use(express.static("public"));
+app.use(express.static("assets"));
 
 // This is the basic-routing
 app.get("/", (request, response) => {
